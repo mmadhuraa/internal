@@ -1,0 +1,192 @@
+ Standard Data types:
+
+Number:
+String:
+List:
+tuple
+dictionary
+set
+
+s="Hello"
+
+s[0] => 'H'
+
+s[0:4] => 'Hell'
+
+Sequence type (ordered collection):string,List and tuple
+indexing,slicing
+
+Non sequence type (unordered collection):dictionary, set
+
+ Immutable type: number,string,tuple
+ Mutable type: list,dictionary,set
+
+
+
+
+
+>>> List1=[]
+>>> type(List1)
+<class 'list'>
+>>> List1=[1,2,3,45]
+>>> print(List1)
+[1, 2, 3, 45]
+>>> List1=[1,2,3,45,12.5,'Hello']
+>>> print(List1)
+[1, 2, 3, 45, 12.5, 'Hello']
+>>> List1=[1,2,3,45,12.5,'Hello']
+>>> List1[2]
+3
+>>> List1[0:5]   #[start : End]   from start to (End-1)
+[1, 2, 3, 45, 12.5]
+>>> List1[2:5]
+[3, 45, 12.5]
+>>> List1[:5]
+[1, 2, 3, 45, 12.5]
+>>> List1[1:]
+[2, 3, 45, 12.5, 'Hello']
+>>> List1=[1,2,3,45,12.5,'Hello',[10,20]]
+>>> List1[6]
+[10, 20]
+>>> type(List1[6])
+<class 'list'>
+>>> type(List1[1])
+<class 'int'>
+>>> type(List1[5])
+<class 'str'>
+>>> List1=[1,2,3,45,12.5,'Hello',[10,20]]
+>>> List1[6][0]
+10
+>>> List1[6][-1]
+20
+>>> L1=[1,None,3]
+>>> L1
+[1, None, 3]
+>>> L1=[1,,3]
+SyntaxError: invalid syntax
+>>> L1=[1,'',3]
+>>> L1=[1,2,[10,20,30,['hello',45]]]
+>>> L1[2][3][0]
+'hello'
+>>> L1=[12,45,78]
+>>> L1[2]=100
+>>> L1
+[12, 45, 100]
+>>> L1.append(1)
+>>> L1
+[12, 45, 100, 1]
+>>> L1.append(1,2,3)
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    L1.append(1,2,3)
+TypeError: append() takes exactly one argument (3 given)
+>>> L1.append([10,20,30])
+>>> L1
+[12, 45, 100, 1, [10, 20, 30]]
+>>> L1.extend(40)
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    L1.extend(40)
+TypeError: 'int' object is not iterable
+>>> L1.extend([40])
+>>> L1
+[12, 45, 100, 1, [10, 20, 30], 40]
+>>> L1.extend([30,40,50])
+>>> L1
+[12, 45, 100, 1, [10, 20, 30], 40, 30, 40, 50]
+>>> L1.extend('Hello')
+>>> L1
+[12, 45, 100, 1, [10, 20, 30], 40, 30, 40, 50, 'H', 'e', 'l', 'l', 'o']
+>>> L1.extend(['Hello'])
+>>> L1
+[12, 45, 100, 1, [10, 20, 30], 40, 30, 40, 50, 'H', 'e', 'l', 'l', 'o', 'Hello']
+>>> L1.extend([100,[200,300]])
+>>> L1
+[12, 45, 100, 1, [10, 20, 30], 40, 30, 40, 50, 'H', 'e', 'l', 'l', 'o', 'Hello', 100, [200, 300]]
+>>> L1.append('hello')
+>>> L1
+[12, 45, 100, 1, [10, 20, 30], 40, 30, 40, 50, 'H', 'e', 'l', 'l', 'o', 'Hello', 100, [200, 300], 'hello']
+
+
+
+tuple:sequence type ,ordered collection => indexing , slicing
+immutable => read only list
+
+ ()
+  
+
+Control Flow structures:
+
+ 1. Conditional structures/Decision making structures
+
+ if-elif-else
+   
+
+ 2: Iterative structures(looping):
+
+
+ Slicing:   [Start: End : step]
+
+
+>>> s="CDAC Noida"
+>>> s[0:10]
+'CDAC Noida'
+>>> s[0:10:2]
+'CA od'
+>>> s[0:10:1]
+'CDAC Noida'
+>>> s[0:10:-1]
+''
+>>> s[10:0:-1]
+'adioN CAD'
+>>> s[9::-1]
+'adioN CADC'
+>>> s[::-1]
+'adioN CADC'
+>>> s[9::-2]
+'aiNCD'
+>>> s[:]
+'CDAC Noida'
+>>> s[::]
+'CDAC Noida'
+>>> s[::-1]
+'adioN CADC'
+>>> s[::-2]
+'aiNCD'
+>>> s[0]
+'C'
+>>> s[0]='b'
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    s[0]='b'
+TypeError: 'str' object does not support item assignment
+>>> del s[0]
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    del s[0]
+TypeError: 'str' object doesn't support item deletion
+>>> del s
+>>> s
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    s
+NameError: name 's' is not defined
+>>> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
