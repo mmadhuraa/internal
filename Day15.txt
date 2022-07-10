@@ -1,0 +1,17 @@
+Procedure Oriented Programming: C => Main focus is on function
+
+Object Oriented Programmon(OOP): python,C++,Java,C#.NET => based on object and class.
+Encapsulation:
+Abstraction:
+Polymorphism:
+Inheritance:
+
+
+Class:collection of data member(variable) and member function(methods).
+
+Objects:instance of a class.instantiation.
+
+- we can create as many object as we require.
+- one object is independent from another object. 
+
+Object/Class: collection of data member(variable) and member function(methods) that act on those data member.
